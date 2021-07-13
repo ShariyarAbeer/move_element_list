@@ -33,6 +33,8 @@ class _HomeState extends State<Home> {
 
           final user = users.removeAt(oldIndex);
           users.insert(index, user);
+          // index print hoy
+          print(index);
         }),
         itemBuilder: (context, index) {
           final user = users[index];
@@ -55,6 +57,7 @@ class _HomeState extends State<Home> {
         //   radius: 30,
         // ),
         title: Text(user.name),
+
         // trailing: Row(
         //   mainAxisSize: MainAxisSize.min,
         //   children: [
