@@ -8,28 +8,12 @@ final name = [
   "istiaq vai",
   "sharif vai",
   "mehedi vai",
-  "abeer2",
-  "istiaq vai2",
-  "sharif vai2",
-  "mehedi vai2",
-  "abeer3",
-  "istiaq vai3",
-  "sharif vai3",
-  "mehedi vai3",
 ];
 final number = [
   "45454",
   "4545",
   "7854",
   "7832",
-  "454",
-  "4545",
-  "741",
-  "777",
-  "526",
-  "54545",
-  "4545",
-  "888",
 ];
 
 // final urlImages = [

@@ -11,12 +11,15 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<User> users = [];
+  List<String> allIndex = [];
 
   @override
   void initState() {
     super.initState();
 
     users = getUsers();
+
+    //allIndex = getUsers();
   }
 
   //List<int> number = [0, 1, 2, 3, 4, 5];
@@ -33,8 +36,17 @@ class _HomeState extends State<Home> {
 
           final user = users.removeAt(oldIndex);
           users.insert(index, user);
+          allIndex.add(user.name[index]);
+          //allIndex.insert(index, user);
           // index print hoy
           print(index);
+          for (var i = 0; i < users.length; i++) {
+            //print(i);
+
+            final a = 0;
+          }
+          print("---");
+          // print(allIndex);
         }),
         itemBuilder: (context, index) {
           final user = users[index];
@@ -57,6 +69,8 @@ class _HomeState extends State<Home> {
         //   radius: 30,
         // ),
         title: Text(user.name),
+
+        leading: Text(user.name[index]),
 
         // trailing: Row(
         //   mainAxisSize: MainAxisSize.min,
